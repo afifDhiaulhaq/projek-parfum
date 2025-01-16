@@ -100,7 +100,7 @@ nav img{
     border: none;
     background-color: #0A0A0A;
     height: 100%;
-    width: 40rem;
+    width: 25rem;
 }
 #product_card img{
     width: 100%;
@@ -145,9 +145,15 @@ nav img{
     border: none;
     height: 100%;
     width: 20rem;
-    border: 1px solid white;
-    background-color: #000000;
+    background-color: #0A0A0A;
     color: #ffffff;
+    border-radius: 0px;
+}
+
+#banner-img{
+    width: 100%;
+    text-align: center;
+    background-color: #000000;
 }
 
 
@@ -213,14 +219,6 @@ nav img{
     .article_card{
         display: flex;
         flex-direction: column;
-    }
-    .article_card .card{
-        border: none;
-        height: 100%;
-        width: 100%;
-        border: 1px solid white;
-        background-color: #000000;
-        color: #ffffff;
     }
     
 
