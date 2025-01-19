@@ -1,0 +1,96 @@
+/* rest css */
+@font-face {
+    font-family: 'Aileron';
+    src: url("Aileron-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-family: Aileron;
+    background-color: black;
+
+}
+
+ol, ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+.row{
+    margin: 0;
+}
+#article-header{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 40px 0 40px 0;
+}
+#article-header h1{
+    color: #B99158;
+}
+#article-header #search{
+    display: flex;
+    width: 80%;
+}
+#article-header input{
+    width: 50%;
+}
+#article-list{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#article-card{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card{
+    max-width: 350px;
+    background-color: black;
+}
+.card h5{
+    color: #B99158;
+}
+.card p{
+    color: white;
+}
+
+@media only screen and (max-width: 600px){
+    #article-card{
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+    }
+    .card{
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    #article-list{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+

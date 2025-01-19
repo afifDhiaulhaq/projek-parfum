@@ -1,0 +1,57 @@
+/* rest css */
+@font-face {
+    font-family: 'Aileron';
+    src: url("Aileron-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-family: Aileron;
+    background-color: black;
+
+}
+
+ol, ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+.row{
+    margin: 0;
+}
+
+#article-header{
+    padding: 100px;
+}
+#article-header h1{
+    color: #B99158;
+}
+p{
+    color: white;
+}
+#article-body{
+    padding: 0px 100px 0px 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+#article-body img{
+    width: 100%;
+}
