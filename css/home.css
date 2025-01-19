@@ -93,7 +93,7 @@ img {
     
 }
 #product_card .card{
-    border: none;
+    border-radius: 0px;
     background-color: #0A0A0A;
     height: 100%;
     width: 25rem;
@@ -140,6 +140,7 @@ img {
 }
 #explore h3:hover{
     color: #ffffff;
+    border-bottom: solid 1px white;
 }
 #article{
     padding: 50px 20px 50px 20px;
@@ -154,16 +155,19 @@ img {
 }
 .article_card .card{
     border: none;
-    height: 100%;
-    width: 20rem;
     background-color: #0A0A0A;
-    color: #ffffff;
-    border-radius: 0px;
+    height: 100%;
+    width: 25rem;
     transition: all 0.2s ease-in-out;
+    border-radius: 0px;
+    color: white;
+
 }
 .article_card .card:hover{
     border: solid 0.5px white;
-
+}
+.article_card #date-article{
+    text-align: end;
 }
 
 #banner-img{
@@ -243,15 +247,21 @@ img {
     #product_card .card h1{
         font-weight: bold;
         font-size: 1.5em;
+        color: white;
     }
     #product_card .card p{
         font-size: 0.8em;
+        color: white;
+
     }
 
 
     .article_card{
         display: flex;
         flex-direction: column;
+    }
+    .article_card .card{
+        width: 100%;
     }
     .article_card h5{
         font-size: 1.5em;
