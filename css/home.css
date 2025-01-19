@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Aileron';
+    src: url("Aileron-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
 html {
     box-sizing: border-box;
 }
@@ -10,6 +16,9 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
     margin: 0;
     padding: 0;
     font-weight: normal;
+    font-weight: normal;
+    font-family: 'Aileron';
+
 }
 
 ol, ul {
@@ -24,28 +33,9 @@ img {
 .row{
     margin: 0;
 }
-nav {
-    background-color: #000000;
-    padding: 15px;
-    border-bottom: 1px solid white;
-    font-size: 20px;
-}
-nav img{
-    height: 50px;
-    width: auto;
-}
-#navbarNav a{
-    color: #B99158;
-    font-size: 100%;
-    text-align: center;
-}
 
-#navbarNav a:hover{
-    color: #ffffff;
-}
-.navbar-toggler-icon{
-    color: #ffffff;
-}
+/* EVENT */
+
 #event{
     background-color: #000000;
     padding: 5%;
@@ -54,6 +44,8 @@ nav img{
 #event #image{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+
 }
 
 #event #img{
@@ -64,16 +56,21 @@ nav img{
 #event #desc{
     padding: 30px;
     width: 100%;
-    align-items: center;
-    align-content: center;
 }
 #event #desc h1{
+    padding-top: 10px;
     color:#B99158;
     margin-bottom: 10px;
+    font-size:70px;
 }
 #event #desc p{
+    padding-top: 10px;
     color:#ffffff;
+    font-size:1.7em;
 }
+/* EVENT END */
+
+/* PRODUCT */
 #product{
     padding: 50px 20px 50px 20px;
     background-color: #0A0A0A;
@@ -86,14 +83,13 @@ nav img{
 }
 #product h1{
     color: #B99158;
-    text-align: center;
 }
 #product_card{
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content:center;
-    gap:30px;
+    gap:20px;
     
 }
 #product_card .card{
@@ -101,6 +97,11 @@ nav img{
     background-color: #0A0A0A;
     height: 100%;
     width: 25rem;
+    transition: all 0.2s ease-in-out;
+
+}
+#product_card .card:hover{
+  border: solid 0.5px white;
 }
 #product_card img{
     width: 100%;
@@ -113,8 +114,18 @@ nav img{
     color: white;
     /* font-size: 100%; */
 }
-#product_card .card #prize{
-    color: #ffffff;
+#product_card #notes{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+#product_card #note{
+    color: white;
+    width: fit-content;
+    padding: 5px;
+    border: solid 1px white;
+    /* font-size: x-small; */
+    margin-top: 20px;
 }
 
 #explore{
@@ -148,6 +159,11 @@ nav img{
     background-color: #0A0A0A;
     color: #ffffff;
     border-radius: 0px;
+    transition: all 0.2s ease-in-out;
+}
+.article_card .card:hover{
+    border: solid 0.5px white;
+
 }
 
 #banner-img{
@@ -159,6 +175,7 @@ nav img{
 
 
 @media only screen and (max-width: 600px) {
+    /* EVENT */
     #event #image{
         display: flex;
         flex-direction: column;
@@ -171,7 +188,7 @@ nav img{
     }
     #event #image{
         display: flex;
-        flex-direction: col;
+        flex-direction: column;
     }
     
     #event #img{
@@ -188,23 +205,27 @@ nav img{
     #event #desc h1{
         color:#B99158;
         margin-bottom: 10px;
+        font-size: 2em;
     }
     #event #desc p{
         color:#ffffff;
+        font-size: .9375em;
     }
 
     /* product */
     #product{
-        padding: 10px;
-        background-color: #0A0A0A;
+        padding: 50px 15px 50px 15px;
+        background-color: black;
     }
     #product #tittle{
         margin-bottom: 50px;
         width: 100%;
     }
-    #product h1{
+    #product #tittle h1{
         color: #B99158;
         text-align: center;
+        font-weight: bold;
+
     }
     #product_card{
         display: flex;
@@ -212,16 +233,38 @@ nav img{
     }
     #product_card .card{
         border: none;
+        border-radius: 0px;
         background-color: #0A0A0A;
         width: 100%;
     }
+    #product_card .card img{
+        border-radius: 0px;
+    }
+    #product_card .card h1{
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    #product_card .card p{
+        font-size: 0.8em;
+    }
+
 
     .article_card{
         display: flex;
         flex-direction: column;
     }
+    .article_card h5{
+        font-size: 1.5em;
+    }
+    .article_card p{
+        font-size: 0.8em;
+    }
+    .article_card #date-article{
+        font-size: 0.5em;
+    }
     
 
+    
 }
 
 

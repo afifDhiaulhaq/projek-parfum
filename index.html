@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="asset/logo (1).png">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/footer.css">
 
   </head>
@@ -19,13 +20,10 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="products-page.html">PRODUCT</a>
+                        <a class="nav-link" href="products-page.html">CATALOG</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="articles.html">ARTICLE</a>
@@ -40,22 +38,22 @@
 
     <div id="baner">
         <div id="banner-img">
-            <img src="asset/banner.jpg" alt="">
+            <video width="100%" height="auto" autoplay loop muted>
+                <source src="asset/videoplayback.mp4" type="video/mp4">
+              </video>
         </div>
     </div>
+    
 
     <div id="event" class="row">
-        <div class="row">
-            <div id="video"></div>          
-        </div>
         <div class="row" id="image">
             <div id="img" class="col text-center ">
                 <img src="asset/Copy of FCA06875 (2).jpg" alt="">
             </div>
             <div id="desc" class="col">
-                <h1>EVENT</h1>
+                <h1>World Class Fragrance</h1>
                 <p>
-                    Torem ipsum dolor sit amet, conseFeugiat diam pellentesque at Nulla lectus quam felis adip.
+                    Xociety is a beauty brand that revolves around our society. Like the name it self, Xociety differs itself from the rest.
                 </p>
             </div>
         </div>
@@ -66,20 +64,28 @@
             <h1>OUR PRODUCT</h1>
         </div>
         <div id="product_card">
+            
             <div class="card">
                 <img src="asset/Copy of 240819 COPIUM_POSM_ECOMMERCE_COMP_01.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to.</p>
-                  <p id="prize">RP 200.000,00</p>
+                    <h1 class="card-title">Copium</h1>
+                    <p class="card-text">Introducing Copium - Pure Chill Vibes in Every Spritz!</p>
+                    <div id="notes">
+                        <p id="note">Chamomile</p>
+                        <p id="note">Pear</p>
+                        <p id="note">Sandalwood</p>
+                    </div>
                 </div>
             </div>
             <div class="card">
                 <img src="asset/Copy of 240819 CORPORAT_POSM_OPSI_ECOMMERCE_COMP_02.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to.</p>
-                  <p id="prize">RP 200.000,00</p>
+                    <h1 class="card-title">Corporat</h5>
+                    <p class="card-text">Introducing, Corporat - An Elegant Fragrance for the Modern Professional</p>
+                    <div id="notes">
+                        <p id="note">Pineapple</p>
+                        <p id="note">Amberwood</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -91,38 +97,27 @@
     </div>
 
     <div id="article">
-        <div id="tittle">
+        <!-- <div id="tittle">
             <h1>OUR ARTICLE</h1>
-        </div>
+        </div> -->
         <div class="article_card">
             <div class="card">
-                <img src="asset/Copy of FCA06875 (2).jpg" class="card-img-top" alt="...">
+                <img src="asset/blog-1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to.Some quick example text to</p>
+                  <h5 class="card-title" id="tittle-article">BLOG</h5>
+                  <p class="card-text" id="desc-article">Some quick example text to.Some quick example text to</p>
+                  <p class="card-text" id="date-article">1 Janury 2025</p>
                 </div>
             </div>
             <div class="card">
-                <img src="asset/Copy of FCA06875 (2).jpg" class="card-img-top" alt="...">
+                <img src="asset/blog-2.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to.Some quick example text to</p>
+                  <h5 class="card-title" id="tittle-article">BLOG</h5>
+                  <p class="card-text" id="desc-article">Some quick example text to.Some quick example text to</p>
+                  <p class="card-text" id="date-article">1 Janury 2025</p>
                 </div>
             </div>
-            <div class="card">
-                <img src="asset/Copy of FCA06875 (2).jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to.Some quick example text to</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="asset/Copy of FCA06875 (2).jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to.Some quick example text to</p>
-                </div>
-            </div>
+           
         </div>
         <div id="explore">
             <h3>EXPLORE ALL</h3>
@@ -130,6 +125,9 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
+  
+  
+
   <footer>
         <div id="footer-body" class="row">
             <div id="footer-tittle" class="col">
@@ -157,4 +155,30 @@
             <p>Copyright © 2025 yourxociety.com</p>
         </div>
     </footer>
+
+    <div id="myModal" class="modal" style="display: block;">
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="asset/banner.jpg" alt="">
+        </div>  
+    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
 </html>

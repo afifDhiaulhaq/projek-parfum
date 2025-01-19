@@ -1,0 +1,26 @@
+nav {
+    background-color: #000000;
+    padding: 15px;
+    border-bottom: 1px solid white;
+    font-size: 20px;
+    width: 100%;
+    z-index: 99;
+
+}
+nav img{
+    height: 50px;
+    width: auto;
+}
+#navbarNav a{
+    color: #B99158;
+    font-size: 100%;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+#navbarNav a:hover{
+    color: #ffffff;
+}
+.navbar-toggler-icon{
+    color: #ffffff;
+}
