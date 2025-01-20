@@ -126,6 +126,11 @@ img {
     border: solid 1px white;
     /* font-size: x-small; */
     margin-top: 20px;
+    transition: all 0.2s ease-in-out;
+}
+#product_card #note:hover{
+    background-color: white;
+    color:#0A0A0A
 }
 
 #explore{
@@ -140,7 +145,6 @@ img {
 }
 #explore h3:hover{
     color: #ffffff;
-    border-bottom: solid 1px white;
 }
 #article{
     padding: 50px 20px 50px 20px;
@@ -154,13 +158,12 @@ img {
     gap:20px;
 }
 .article_card .card{
-    border: none;
     background-color: #0A0A0A;
     height: 100%;
     width: 25rem;
-    transition: all 0.2s ease-in-out;
     border-radius: 0px;
     color: white;
+    transition: all 0.2s ease-in-out;
 
 }
 .article_card .card:hover{

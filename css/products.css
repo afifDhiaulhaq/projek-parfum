@@ -1,4 +1,10 @@
 /* rest css */
+@font-face {
+    font-family: 'Aileron';
+    src: url("Aileron-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
 html {
     box-sizing: border-box;
 }
@@ -11,8 +17,9 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
     margin: 0;
     padding: 0;
     font-weight: normal;
-}
+    font-family: 'Aileron';
 
+}
 ol, ul {
     list-style: none;
 }
@@ -29,6 +36,7 @@ img {
 /* PRODUCTS */
 #products{
     background-color: black;
+    padding-top:100px ;
     
 }
 /* products-header */
@@ -63,36 +71,69 @@ img {
 }
 
 /* products-list */
-#products-list{
-    margin-top: 50px;
-    padding-bottom: 50px;
+#product{
+    padding: 50px 20px 50px 20px;
+    background-color:black;
+}
+#tittle{
+    margin-bottom: 50px;
+    width: 100%;
+    color: #B99158;
+    text-align: center;
+}
+#product h1{
+    color: #B99158;
 }
 #product_card{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 0px 100px 0px 100px;
-}
-#product_card .card:hover{
-    border: solid 0.5px white;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content:center;
+    gap:20px;
+    
 }
 #product_card .card{
+    border-radius: 0px;
+    background-color: #0A0A0A;
+    height: 100%;
+    width: 25rem;
+    transition: all 0.2s ease-in-out;
+
+}
+#product_card .card:hover{
+  border: solid 0.5px white;
+}
+#product_card img{
     width: 100%;
 }
-#product_card #notes{
+#product_card .card h5{
+    color: #B99158;
+    /* font-size: 100%; */
+}
+#product_card .card .card-text{
+    color: white;
+    /* font-size: 100%; */
+}
+#product_card .card #notes{
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
-#product_card #note{
-    background-color: #B99158;
+#product_card .card #note{
     color: white;
     width: fit-content;
-    padding: 3px;
-    border-radius: 100px;
-    font-size: x-small;
+    padding: 5px;
+    border: solid 1px white;
+    /* font-size: x-small; */
     margin-top: 20px;
+    transition: all 0.2s ease-in-out;
+
 }
+#product_card #note:hover{
+    background-color: white;
+    color:#0A0A0A
+}
+
 
 
 
@@ -116,14 +157,42 @@ img {
     }
 
     /* products-list */
+    #product{
+        padding: 50px 15px 50px 15px;
+        background-color: black;
+    }
+    #product #tittle{
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    #product #tittle h1{
+        color: #B99158;
+        text-align: center;
+        font-weight: bold;
+
+    }
     #product_card{
-        display:flex;
+        display: flex;
         flex-direction: column;
-        padding: 0px 10px 0px 10px;
-        gap: 10px;
+    }
+    #product_card .card{
+        border: none;
+        border-radius: 0px;
+        background-color: #0A0A0A;
+        width: 100%;
+    }
+    #product_card .card img{
+        border-radius: 0px;
+    }
+    #product_card .card h1{
+        font-weight: bold;
+        font-size: 1.5em;
+        color: white;
     }
     #product_card .card p{
-        font-size: smaller
+        font-size: 0.8em;
+        color: white;
+
     }
 
 }

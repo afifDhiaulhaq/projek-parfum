@@ -15,7 +15,9 @@
     <nav class="navbar navbar-expand-sm" data-bs-theme="dark">
         <div class="container-fluid">
             <div class="navbar-brand">
-                <img src="asset/logo.png" alt="">
+                <a href="index.html">
+                    <img src="asset/logo.png" alt="">
+                </a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -29,7 +31,7 @@
                         <a class="nav-link" href="articles.html">ARTICLE</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT</a>
+                        <a class="nav-link" href="about.html">ABOUT</a>
                     </li>
                 </ul>
             </div>
@@ -64,30 +66,33 @@
             <h1>OUR PRODUCT</h1>
         </div>
         <div id="product_card">
-            
-            <div class="card">
-                <img src="asset/Copy of 240819 COPIUM_POSM_ECOMMERCE_COMP_01.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h1 class="card-title">Copium</h1>
-                    <p class="card-text">Introducing Copium - Pure Chill Vibes in Every Spritz!</p>
-                    <div id="notes">
-                        <p id="note">Chamomile</p>
-                        <p id="note">Pear</p>
-                        <p id="note">Sandalwood</p>
+            <a href="product-detail.html">
+                <div class="card">
+                    <img src="asset/Copy of 240819 COPIUM_POSM_ECOMMERCE_COMP_01.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h1 class="card-title">Copium</h1>
+                        <p class="card-text">Introducing Copium - Pure Chill Vibes in Every Spritz!</p>
+                        <div id="notes">
+                            <p id="note">Chamomile</p>
+                            <p id="note">Pear</p>
+                            <p id="note">Sandalwood</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src="asset/Copy of 240819 CORPORAT_POSM_OPSI_ECOMMERCE_COMP_02.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h1 class="card-title">Corporat</h5>
-                    <p class="card-text">Introducing, Corporat - An Elegant Fragrance for the Modern Professional</p>
-                    <div id="notes">
-                        <p id="note">Pineapple</p>
-                        <p id="note">Amberwood</p>
+            </a>
+            <a href="product-detail.html">
+                <div class="card">
+                    <img src="asset/Copy of 240819 CORPORAT_POSM_OPSI_ECOMMERCE_COMP_02.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h1 class="card-title">Corporat</h5>
+                        <p class="card-text">Introducing, Corporat - An Elegant Fragrance for the Modern Professional</p>
+                        <div id="notes">
+                            <p id="note">Pineapple</p>
+                            <p id="note">Amberwood</p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </a>
         </div>
         <div id="explore">
             <a href="products-page.html">
@@ -120,7 +125,9 @@
            
         </div>
         <div id="explore">
-            <h3>EXPLORE ALL</h3>
+            <a href="articles.html ">
+                <h3>EXPLORE ALL</h3>
+            </a>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -161,23 +168,5 @@
         <img src="asset/banner.jpg" alt="">
         </div>  
     </div>
-    <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
-        
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-        
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-          modal.style.display = "none";
-        }
-        
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-          if (event.target == modal) {
-            modal.style.display = "none";
-          }
-        }
-        </script>
+    <script src="js/modal-home.js"></script>
 </html>

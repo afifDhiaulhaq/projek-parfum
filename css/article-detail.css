@@ -17,9 +17,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
     margin: 0;
     padding: 0;
     font-weight: normal;
-    font-family: Aileron;
-    background-color: black;
-
+    font-family: 'Aileron';
 }
 
 ol, ul {
@@ -34,8 +32,17 @@ img {
 .row{
     margin: 0;
 }
+#article-detail{
+    background-color: black;
+    padding-top: 100PX;
+}
 
 #article-header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
     padding: 100px;
 }
 #article-header h1{
@@ -45,13 +52,22 @@ p{
     color: white;
 }
 #article-body{
-    padding: 0px 100px 0px 100px;
+    padding: 0px 100px 100px 100px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 10px;
+    gap: 30px;
 }
 #article-body img{
     width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    #article-header{
+        padding: 20px;
+    }
+    #article-body{
+        padding: 0px 20px 100px 20px;
+    }
 }
